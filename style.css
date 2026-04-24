@@ -486,3 +486,133 @@ body {
         justify-content: center;
     }
 }
+
+.courses-section {
+    padding: 4rem 0;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.course-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.course-header {
+    margin-bottom: 1.5rem;
+}
+
+.course-icon {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    width: 24px;
+    height: 24px;
+}
+
+.course-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.institution {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.course-items {
+    list-style: none;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.course-items li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.course-items li:last-child {
+    border-bottom: none;
+}
+
+
+.languages-section {
+    padding: 4rem 0;
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.language-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.language-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.language-icon {
+    color: var(--accent-color);
+    width: 28px;
+    height: 28px;
+}
+
+.language-info {
+    flex-grow: 1;
+}
+
+.language-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.level-tag {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.level-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.level-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-color), #0ea5e9);
+    border-radius: 10px;
+}
