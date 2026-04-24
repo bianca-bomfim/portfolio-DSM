@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio | TI</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
     <header class="main-header">
@@ -15,41 +16,47 @@
             <div class="logo">Portfólio<span class="dot">.</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre Mim</a></li>
                 <li><a href="#projects">Projetos</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="profile-info">
-                    <h1>Olá, eu sou o Seu Nome</h1>
-                    <p class="tagline">Estudante de TI | Desenvolvedor em construção</p>
-                    <div class="header-line"></div>
-                    <p class="intro-text">Bem-vindo ao meu espaço de experimentação técnica e aprendizado acadêmico.</p>
+        <section id="home" class="hero-section fade-in-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="greeting">Olá, eu sou a</span>
+                    <h1>Bianca Bomfim<span class="dot">.</span></h1>
+                    <h2 class="tagline">Full Stack Developer | Risk Tech @ Delta Global Bank</h2>
+                    <p class="hero-description">
+                        Especialista no desenvolvimento de sistemas de alta disponibilidade para o setor financeiro, 
+                        focada em soluções de mitigação de fraude e análise de risco em larga escala.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn-primary">Ver Projetos</a>
+                        <a href="#about" class="btn-secondary">Sobre Mim</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="./img/foto-home.jpeg" alt="Foto de Bianca Bomfim">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2>Sobre Mim</h2>
-                <p>Sou estudante de Tecnologia da Informação apaixonado por resolver problemas complexos através do código. Atualmente foco em expandir meus conhecimentos em desenvolvimento web e ciência de dados.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="container projects-section">
+        <section id="projects" class="container projects-section fade-in-section">
             <h2>Meus Projetos - FATEC Itaquera</h2>
             <div class="projects-grid">
-                
-                <a href="https://github.com/seu-usuario/projeto-python" target="_blank" class="card">
+
+                <a href="https://github.com/bianca-bomfim/PI-Retrajar" target="_blank" class="card">
                     <div class="card-content">
                         <span class="semester-label">PI - 1° Semestre</span>
                         <i data-lucide="leaf" class="icon"></i>
                         <h3>ONG - RETRAJAR</h3>
-                        <p>Conscientização ambiental voltado ao descarte correto de resíduos têxteis e combate ao consumismo.</p>
+                        <p>Conscientização ambiental voltado ao descarte correto de resíduos têxteis e combate ao
+                            consumismo.</p>
                         <div class="tags">
                             <span class="tag">Photoshop</span>
                             <span class="tag">Prototipo</span>
@@ -62,11 +69,12 @@
                         <span class="semester-label">PI - 2° Semestre</span>
                         <i data-lucide="calendar-check" class="icon"></i>
                         <h3> Sistema de Reservas</h3>
-                        <p>Desenvolvimento de um sistema para gestão e reserva de laboratórios acadêmicos por professores.</p>
-                    <div class="tags">
-                        <span class="tag">Arquitetura de Software</span>
-                        <span class="tag">PHP</span>
-                    </div>
+                        <p>Desenvolvimento de um sistema para gestão e reserva de laboratórios acadêmicos por
+                            professores.</p>
+                        <div class="tags">
+                            <span class="tag">Arquitetura de Software</span>
+                            <span class="tag">PHP</span>
+                        </div>
                     </div>
                 </a>
 
@@ -88,7 +96,8 @@
                         <span class="semester-label">PI - 4° Semestre</span>
                         <i data-lucide="layout" class="icon"></i>
                         <h3>Web - Matemática Rio</h3>
-                        <p>Desenvolvimento de nova interface e experiência de usuário para a plataforma de ensino Matemática Rio.</p>
+                        <p>Desenvolvimento de nova interface e experiência de usuário para a plataforma de ensino
+                            Matemática Rio.</p>
                         <div class="tags">
                             <span class="tag">Front-End</span>
                             <span class="tag">UX / UI</span>
@@ -101,20 +110,22 @@
                         <span class="semester-label">PI - 5° Semestre</span>
                         <i data-lucide="smartphone" class="icon"></i>
                         <h3>Mobile - Matemática Rio</h3>
-                        <p>Criação de aplicativo educacional gamificado unindo o ensino de matemática à dinâmica da Fórmula 1.</p>
-                    <div class="tags">
+                        <p>Criação de aplicativo educacional gamificado unindo o ensino de matemática à dinâmica da
+                            Fórmula 1.</p>
+                        <div class="tags">
                             <span class="tag">Figma</span>
                             <span class="tag">React Native</span>
-                    </div>
+                        </div>
                     </div>
                 </a>
 
-                <a href="" target="_blank" class="card">
+                <a href="https://github.com/bianca-bomfim/IoT-cidade-inteligente" target="_blank" class="card">
                     <div class="card-content">
                         <span class="semester-label">Projeto Integrador</span>
                         <i data-lucide="cpu" class="icon"></i>
                         <h3>Cidade Conectada</h3>
-                        <p>Projeto de IoT para transformar vagas comuns em pontos inteligentes de monitoramento e gestão urbana.</p>
+                        <p>Projeto de IoT para transformar vagas comuns em pontos inteligentes de monitoramento e gestão
+                            urbana.</p>
                         <div class="tags">
                             <span class="tag">Hardware</span>
                             <span class="tag">Software</span>
@@ -122,12 +133,13 @@
                     </div>
                 </a>
 
-                <a href="" target="_blank" class="card">
+                <a href="https://github.com/bianca-bomfim/cop30" target="_blank" class="card">
                     <div class="card-content">
                         <span class="semester-label">Projeto Integrador</span>
                         <i data-lucide="map" class="icon"></i>
                         <h3>COP 30</h3>
-                        <p>Sistema de bilhetagem e gerenciamento de frotas de ônibus para controle de acesso à COP30.</p>
+                        <p>Sistema de bilhetagem e gerenciamento de frotas de ônibus para controle de acesso à COP30.
+                        </p>
                         <div class="tags">
                             <span class="tag">Front-End</span>
                             <span class="tag">UX / UI</span>
@@ -135,25 +147,27 @@
                     </div>
                 </a>
 
-                <a href="" target="_blank" class="card">
+                <a href="https://github.com/bianca-bomfim/loja-brinquedo" target="_blank" class="card">
                     <div class="card-content">
                         <span class="semester-label">Projeto Integrador</span>
                         <i data-lucide="package" class="icon"></i>
                         <h3>Loja de Brinquedos</h3>
-                        <p>Sistema para loja de brinquedos com controle completo de cadastro, consulta e atualização de produtos.</p>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Banco de Dados</span>
-                    </div>
+                        <p>Sistema para loja de brinquedos com controle completo de cadastro, consulta e atualização de
+                            produtos.</p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Banco de Dados</span>
+                        </div>
                     </div>
                 </a>
 
-                <a href="" target="_blank" class="card">
+                <a href="https://github.com/bianca-bomfim/QR-Code" target="_blank" class="card">
                     <div class="card-content">
                         <span class="semester-label">Projeto Integrador</span>
                         <i data-lucide="qr-code" class="icon"></i>
                         <h3>QR Code</h3>
-                        <p>Solução digital de leitura de QR Code para validação de ingressos e gestão de fluxo de participantes.</p>
+                        <p>Solução digital de leitura de QR Code para validação de ingressos e gestão de fluxo de
+                            participantes.</p>
                         <div class="tags">
                             <span class="tag">Java</span>
                             <span class="tag">Banco de Dados</span>
@@ -162,9 +176,75 @@
                 </a>
             </div>
         </section>
+
+        <section id="about" class="about-section fade-in-section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-intro">
+                        <p>Desenvolvedora Full Stack com foco em sistemas de alta disponibilidade para o setor
+                            financeiro. Graduada em Desenvolvimento de Software Multiplataforma pela FATEC, onde obtive
+                            reconhecimento acadêmico que resultou em uma bolsa de intercâmbio para certificação
+                            internacional na Espanha.</p>
+                        <p>Atualmente, atuo no time de Risk Tech do Delta Global Bank, desenvolvendo soluções para
+                            mitigação de fraude e análise de risco. Tenho experiência prática na construção de motores
+                            de decisão e monitoramento transacional de larga escala.</p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-column">
+                            <h3>Principais frentes</h3>
+                            <ul class="about-list">
+                                <li><strong>Backend & Risk Engine:</strong> APIs em Java (Spring Boot) e scripts Python
+                                    para análise de risco.</li>
+                                <li><strong>Data & Dashboards:</strong> Interfaces em React para monitoramento de fluxos
+                                    PIX em tempo real.</li>
+                                <li><strong>Arquitetura:</strong> Microsserviços com foco em idempotência e resiliência.
+                                </li>
+                                <li><strong>Projetos de Escala:</strong> Apps Web/Mobile para alto tráfego (Prof. Rafael
+                                    Procópio).</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-column">
+                            <h3>Stack Tecnológica</h3>
+                            <ul class="about-list">
+                                <li><strong>Backend:</strong> Java (Spring Boot), Python, Node.js.</li>
+                                <li><strong>Frontend:</strong> React, React Native, TypeScript.</li>
+                                <li><strong>Infra/DB:</strong> PostgreSQL, REST APIs, Docker, Git.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="about-highlight">Focada em converter requisitos de negócio em sistemas robustos.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <script>
-      lucide.createIcons();
-    </script>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">Bianca Bomfim<span class="dot">.</span></div>
+                <p>&copy; 2026 Todos os direitos reservados.</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/bianca-bomfim-24938034a/" target="_blank" class="social-pill">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/bianca-bomfim" target="_blank" class="social-pill">
+                        <i data-lucide="github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
