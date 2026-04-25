@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto | Sistema de Reservas de Salas</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="container nav-wrapper">
+            <div class="logo">Portfólio<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Projetos</a></li>
+                <li><a href="../index.html#about">Sobre Mim</a></li>
+                <li><a href="../index.html#courses">Cursos</a></li>
+                <li><a href="../index.html#languages">Idiomas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container project-detail-hero fade-in-section">
+            <a href="../index.html#projects" class="btn-back">
+                <i data-lucide="arrow-left"></i> Voltar para Projetos
+            </a>
+            <h1>Sistema de Reservas de Salas<span class="dot">.</span></h1>
+            <p class="project-description">
+                Solução robusta para gestão e agendamento de laboratórios acadêmicos e salas de aula.
+            </p>
+
+            <div class="project-detail-grid">
+                <div class="project-info">
+                    <div class="info-section">
+                        <h4>Descrição do Projeto</h4>
+                        <p>
+                            Este sistema foi desenvolvido para resolver a complexidade do agendamento de espaços acadêmicos. 
+                            A plataforma permite o controle rigoroso de disponibilidades, evitando conflitos de horários e centralizando a gestão de recursos como equipamentos e softwares disponíveis em cada sala.
+                        </p>
+                    </div>
+
+                    <div class="info-section">
+                        <h4>Minha Participação (Backend)</h4>
+                        <p>
+                            Como desenvolvedora do time de <strong>Backend</strong>, fui responsável pela construção da arquitetura da API. 
+                            Implementei o sistema de autenticação e o controle de permissões por níveis (RBAC), garantindo que apenas administradores pudessem gerenciar recursos críticos. Também atuei na modelagem do banco de dados MySQL e na documentação dos endpoints.
+                        </p>
+                        <div class="tags" style="margin-top: 1rem;">
+                            <span class="tag">PHP 8</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Composer</span>
+                            <span class="tag">API REST</span>
+                            <span class="tag">RBAC</span>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h4>Links do Projeto</h4>
+                        <div class="social-links" style="justify-content: flex-start;">
+                            <a href="https://github.com/Fatec-itaquera-DSM-2-semestre-2024/back-end" target="_blank" class="social-pill">
+                                <i data-lucide="github"></i>
+                                <span>Repositório Backend</span>
+                            </a>
+                            <a href="https://app.getpostman.com/join-team?invite_code=ceade3ccca6aafd05e148e412b8f5bef&target_code=f1ec94e150877067728285b121169ad1" target="_blank" class="social-pill">
+                                <i data-lucide="terminal"></i>
+                                <span>Workspace Postman</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h4>Destaques Técnicos</h4>
+                        <ul class="about-list">
+                            <li><strong>Gestão de Perfis:</strong> Hierarquia entre usuários Comuns, Administradores e Supremo.</li>
+                            <li><strong>Segurança:</strong> Implementação de tokens para validação de sessões e permissões.</li>
+                            <li><strong>CRUD de Recursos:</strong> Gerenciamento completo de Salas, Equipamentos e Softwares.</li>
+                            <li><strong>Logs e Status:</strong> Sistema automático de status de reserva (pendente/confirmada).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-screenshots">
+                    <div class="info-section">
+                        <h4>Evidências do Sistema</h4>
+                        <div class="screenshot-gallery">
+                            <!-- Adicione suas imagens aqui conforme o padrão -->
+                            <img src="../img/reservas/api-documentation.jpg" alt="Documentação da API no Postman">
+                            <img src="../img/reservas/database-schema.jpg" alt="Modelagem do Banco de Dados">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">Bianca Soares Bomfim<span class="dot">.</span></div>
+                <p>&copy; 2026 Todos os direitos reservados.</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/bianca-bomfim-24938034a/" target="_blank" class="social-pill">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/bianca-bomfim" target="_blank" class="social-pill">
+                        <i data-lucide="github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
